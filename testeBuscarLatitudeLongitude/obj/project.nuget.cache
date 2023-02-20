@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "OToOLeUfX/A2MpjtpmnY7BEjoxYt1OR+vjMZ30wdSrQPuXAq6a0xHi95KrQaF1xgn4wRCsbSmkrkXF+shbBHOw==",
+  "success": true,
+  "projectFilePath": "/Users/rafaelchiareli/Projects/testeBuscarLatitudeLongitude/testeBuscarLatitudeLongitude/testeBuscarLatitudeLongitude.csproj",
+  "expectedPackageFiles": [
+    "/Users/rafaelchiareli/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512",
+    "/Users/rafaelchiareli/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "/Users/rafaelchiareli/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.12/microsoft.netcore.app.host.osx-arm64.6.0.12.nupkg.sha512",
+    "/Users/rafaelchiareli/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

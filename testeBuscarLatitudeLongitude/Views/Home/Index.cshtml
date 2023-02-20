@@ -1,0 +1,85 @@
+﻿@model testeBuscarLatitudeLongitude.Models.Endereco
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Index">
+    <div class="row">
+        <div>
+            <div class="col-md-2">
+                <label asp-for="Tipo" class="form-labek"></label>
+            </div>
+
+            <div class="col-md-2">
+                <input asp-for="Tipo" class="form-control" />
+
+            </div>
+        </div>
+
+        <div>
+            <div class="col-md-2">
+                <label asp-for="Logradouro" class="form-labek"></label>
+            </div>
+
+            <div class="col-md-2">
+                <input asp-for="Logradouro" class="form-control" />
+
+            </div>
+        </div>
+
+        <div>
+            <div class="col-md-2">
+                <label asp-for="Numero" class="form-labek"></label>
+            </div>
+
+            <div class="col-md-2">
+                <input asp-for="Numero" class="form-control" />
+
+            </div>
+        </div>
+
+        <div>
+            <div class="col-md-2">
+                <label asp-for="Bairro" class="form-labek"></label>
+            </div>
+
+            <div class="col-md-2">
+                <input asp-for="Bairro" class="form-control" />
+
+            </div>
+        </div>
+
+        <div>
+            <div class="col-md-2">
+                <label asp-for="Cidade" class="form-labek"></label>
+            </div>
+
+            <div class="col-md-2">
+                <input asp-for="Cidade" class="form-control" />
+
+            </div>
+        </div>
+
+        <div>
+            <div class="col-md-2">
+                <label asp-for="Estado" class="form-labek"></label>
+            </div>
+
+            <div class="col-md-2">
+                <input asp-for="Estado" class="form-control" />
+
+            </div>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <div class="row">
+        <label>Latitude =  @ViewBag.latitude</label>
+        <label>Longitude = @ViewBag.longitude</label>
+        <label>Place id = @ViewBag.place_id</label>
+
+    </div>
+  
+
+</form>
