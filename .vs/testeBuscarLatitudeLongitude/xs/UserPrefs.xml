@@ -1,4 +1,42 @@
 ﻿<Properties StartupConfiguration="{217E0CBF-52E2-406C-AC37-A7A48FF89C55}|Default">
-  <MonoDevelop.Ide.ItemProperties.testeBuscarLatitudeLongitude FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.testeBuscarLatitudeLongitude PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="testeBuscarLatitudeLongitude/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="testeBuscarLatitudeLongitude/Controllers/HomeController.cs" Line="60" Column="15" />
+      <File FileName="testeBuscarLatitudeLongitude/Models/Endereco.cs" Line="12" Column="1" />
+      <File FileName="testeBuscarLatitudeLongitude/Views/Home/Index.cshtml" Line="72" Column="19" />
+      <File FileName="testeBuscarLatitudeLongitude/Views/Home/Privacy.cshtml" Line="8" Column="1" />
+      <File FileName="testeBuscarLatitudeLongitude/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="testeBuscarLatitudeLongitude/Views/Shared/Error.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testeBuscarLatitudeLongitude" expanded="True">
+            <Node name="testeBuscarLatitudeLongitude" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>dados["results"].First["geometry"]["location"]["lat"]</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>

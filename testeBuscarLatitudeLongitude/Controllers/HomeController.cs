@@ -31,6 +31,7 @@ public class HomeController : Controller
         using (var http = new HttpClient())
         {
             var bairro = endereco.Bairro.Replace(' ','+');
+            var logradouro = endereco.Logradouro.Replace(' ', '+');
             var cidade = endereco.Cidade.Replace(' ', '+');
 
             var urlBase = "https://maps.googleapis.com/maps/api/geocode/json?";

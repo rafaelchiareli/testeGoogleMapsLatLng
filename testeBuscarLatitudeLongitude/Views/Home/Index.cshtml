@@ -12,7 +12,7 @@
             </div>
 
             <div class="col-md-2">
-                <input asp-for="Tipo" class="form-control" />
+                <input asp-for="Tipo" class="form-control" value="Rua"/>
 
             </div>
         </div>
@@ -23,7 +23,7 @@
             </div>
 
             <div class="col-md-2">
-                <input asp-for="Logradouro" class="form-control" />
+                <input asp-for="Logradouro" class="form-control" value="O" />
 
             </div>
         </div>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="col-md-2">
-                <input asp-for="Numero" class="form-control" />
+                <input asp-for="Numero" class="form-control" value="353" />
 
             </div>
         </div>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="col-md-2">
-                <input asp-for="Bairro" class="form-control" />
+                <input asp-for="Bairro" class="form-control" value="Vale do Sol"/>
 
             </div>
         </div>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-md-2">
-                <input asp-for="Cidade" class="form-control" />
+                <input asp-for="Cidade" class="form-control" value="Pinheiral" />
 
             </div>
         </div>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="col-md-2">
-                <input asp-for="Estado" class="form-control" />
+                <input asp-for="Estado" class="form-control" value="RJ" />
 
             </div>
         </div>
@@ -80,6 +80,47 @@
         <label>Place id = @ViewBag.place_id</label>
 
     </div>
-  
-
 </form>
+
+<div id="map"></div>
+
+
+@section Scripts{
+    <script>
+        const latitude = "@ViewBag.latitude";
+        const longitude = "@ViewBag.longitude";
+    </script>
+
+    <script>
+        console.log("lat", latitude, "lng", longitude);
+        console.log("lat", parseFloat(latitude.replace(',', '.')), "lng", parseFloat(longitude.replace(',', '.')));
+        
+        if (latitude != "" && longitude != "") {
+            function initMap() {
+                // The location of Uluru
+                const uluru = { lat: parseFloat(latitude.replace(',', '.')), lng: parseFloat(longitude.replace(',', '.')) };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 16,
+                    center: uluru,
+                    
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                });
+            }
+
+            window.initMap = initMap;
+
+        }
+
+
+        
+       
+
+    </script>
+
+
+}
