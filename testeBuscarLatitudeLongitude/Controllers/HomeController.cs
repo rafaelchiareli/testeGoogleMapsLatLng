@@ -9,6 +9,7 @@ namespace testeBuscarLatitudeLongitude.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    public List<Endereco> ListaEndereco = new List<Endereco>();
 
     public HomeController(ILogger<HomeController> logger)
     {
@@ -21,7 +22,6 @@ public class HomeController : Controller
         ViewBag.latitude = "";
         ViewBag.longitude = "";
         ViewBag.place_id = "";
-
         return View();
     }
 
@@ -43,6 +43,9 @@ public class HomeController : Controller
             ViewBag.place_id = dados["results"].First["place_id"];
 
         }
+        
+        
+
         return View();
 
     }
